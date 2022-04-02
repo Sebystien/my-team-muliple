@@ -1,0 +1,36 @@
+
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+html:focus-within{
+  scroll-behavior: smooth;
+}
+
+
+img{
+  width: 100%;
+  display: block;
+}
+
+ul{
+  list-style: none;
+}
+
+button,
+input{
+  font-size: inherit;
+}
+
+a{
+  text-decoration: none;
+}

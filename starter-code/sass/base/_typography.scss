@@ -1,0 +1,57 @@
+// All the typography
+
+
+
+
+body{
+    font-family: var(--ff);
+    line-height: 1.5;
+    
+}
+
+
+
+h1{
+    font-size: var(--fs-700);
+}
+
+// Some utilites for the headings
+
+h1,
+h2,
+h3
+{
+    font-weight: var(--fw-700);
+}
+
+p, 
+button,
+a
+{
+    font-weight: var(--fw-600);
+}
+.title-xxl{
+    font-size: var(--fs-700);
+
+}
+
+.title-xl{
+
+}
+
+.title-l{
+
+}
+
+.title-md{
+
+}
+
+.text-body-one{
+
+}
+
+.text-body-two{
+    
+}
+

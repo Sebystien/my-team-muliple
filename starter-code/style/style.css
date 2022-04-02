@@ -1,0 +1,97 @@
+/*All the files*/
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap");
+:root {
+  /* Colors */
+  --clr-primary-01: hsl(186 98% 17%);
+  --clr-primary-02:  hsl(0, 87%, 73%);
+  --clr-secondary-o1: hsl(179 42% 63%);
+  --clr-secondary-02: hsl(187 41% 29%);
+  --clr-secondary-03:  hsl(186 100% 14%);
+  --clr-secondary-04: hsl(186 96% 10%);
+  --clr-secondary-05: hsl(186 100% 8%);
+  --clr-neutral-01: hsl( 0 0% 100%);
+  /* Typography */
+  --ff: 'Livvic', sans-serif;
+  --fw-400: 400;
+  --fw-600:600;
+  --fw-700: 700;
+  --fs: 1rem;
+  --fs-300: calc( var(--fs) - 1rem);
+  --fs-400: calc( var(--fs) * 1.125rem);
+  --fs-500: calc( var(--fs) * 3rem);
+  --fs-600: calc( var(--fs) * 4rem);
+  --fs-700: calc( var(--fs) * 6.25); }
+
+.l-flex {
+  display: flex; }
+
+.l-grid {
+  display: grid; }
+
+.l-container {
+  width: 90%;
+  margin: 0 auto; }
+
+/*---# background colors #---*/
+.u-clr-primary-bg {
+  background: var(--clr-primary-01); }
+
+/*---# Text colors #---*/
+.u-text-white {
+  color: var(--clr-neutral-01); }
+
+.u-text-pink {
+  color: var(--clr-primary-02); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+html:focus-within {
+  scroll-behavior: smooth; }
+
+img {
+  width: 100%;
+  display: block; }
+
+ul {
+  list-style: none; }
+
+button,
+input {
+  font-size: inherit; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: var(--ff);
+  line-height: 1.5; }
+
+h1 {
+  font-size: var(--fs-700); }
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-700); }
+
+p,
+button,
+a {
+  font-weight: var(--fw-600); }
+
+.title-xxl {
+  font-size: var(--fs-700); }
+
+.nav__logo {
+  width: 8rem; }
+
+.nav {
+  padding-top: 3rem; }

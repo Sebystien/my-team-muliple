@@ -1,0 +1,38 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap');
+
+//A little desing system for our site.
+
+:root{
+
+
+    /* Colors */ 
+    --clr-primary-01: hsl(186 98% 17%);
+    --clr-primary-02:  hsl(0, 87%, 73%);
+
+    --clr-secondary-o1: hsl(179 42% 63%);
+    --clr-secondary-02: hsl(187 41% 29%);
+    --clr-secondary-03:  hsl(186 100% 14%);
+    --clr-secondary-04: hsl(186 96% 10%);
+    --clr-secondary-05: hsl(186 100% 8%);
+
+    --clr-neutral-01: hsl( 0 0% 100%);
+   
+    /* Typography */
+    --ff: 'Livvic', sans-serif;
+    --fw-400: 400;
+    --fw-600:600;
+    --fw-700: 700;
+    
+    --fs: 1rem;
+    --fs-300: calc( var(--fs) - 1rem);  //15px
+    --fs-400: calc( var(--fs) * 1.125rem); //18px
+    --fs-500: calc( var(--fs) * 3rem); // 48px
+    --fs-600: calc( var(--fs) * 4rem); //64px 
+    --fs-700: calc( var(--fs) * 6.25); //100px
+
+
+}
+
+

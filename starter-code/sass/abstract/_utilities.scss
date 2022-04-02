@@ -1,0 +1,32 @@
+
+.l-flex{
+    display: flex;
+}
+
+.l-grid{
+    display: grid;
+}
+
+.l-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+// Colors
+
+/*---# background colors #---*/
+
+
+.u-clr-primary-bg{
+    background: var(--clr-primary-01);
+    
+}
+
+/*---# Text colors #---*/
+.u-text-white{
+    color: var(--clr-neutral-01);
+}
+
+.u-text-pink{
+    color: var(  --clr-primary-02);
+}
