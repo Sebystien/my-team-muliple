@@ -16,11 +16,11 @@
   --fw-600:600;
   --fw-700: 700;
   --fs: 1rem;
-  --fs-300: calc( var(--fs) - 1rem);
-  --fs-400: calc( var(--fs) * 1.125rem);
-  --fs-500: calc( var(--fs) * 3rem);
-  --fs-600: calc( var(--fs) * 4rem);
-  --fs-700: calc( var(--fs) * 6.25); }
+  --fs-300: 1.5rem;
+  --fs-400:  1.8rem ;
+  --fs-500: 4.8rem ;
+  --fs-600: 6.4rem ;
+  --fs-700: 10rem; }
 
 .l-flex {
   display: flex; }
@@ -51,7 +51,8 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
 html:focus-within {
   scroll-behavior: smooth; }
@@ -72,7 +73,8 @@ a {
 
 body {
   font-family: var(--ff);
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: var(--fs-400); }
 
 h1 {
   font-size: var(--fs-700); }
@@ -94,4 +96,45 @@ a {
   width: 8rem; }
 
 .nav {
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__list {
+    display: none; }
+
+.c-btn__burger {
+  background-color: salmon;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px; }
+  @media (min-width: 960px) {
+    .c-btn__burger {
+      display: none; } }
+
+.c-btn__burger-icons {
+  position: relative;
+  transition: all .2s; }
+  .c-btn__burger-icons, .c-btn__burger-icons::before, .c-btn__burger-icons::after {
+    height: 3px;
+    width: 20px;
+    background: white;
+    display: inline-block;
+    margin: 0 auto; }
+  .c-btn__burger-icons::before, .c-btn__burger-icons::after {
+    content: "";
+    position: absolute;
+    left: 0; }
+  .c-btn__burger-icons::before {
+    top: -.8rem; }
+  .c-btn__burger-icons::after {
+    top: .8rem; }
+
+.c-btn__burger-icons.toggled {
+  background: transparent; }
+  .c-btn__burger-icons.toggled::before, .c-btn__burger-icons.toggled::after {
+    top: 0; }
+  .c-btn__burger-icons.toggled::before {
+    transform: rotate(45deg); }
+  .c-btn__burger-icons.toggled::after {
+    transform: rotate(-45deg); }

@@ -26,11 +26,11 @@
     --fw-700: 700;
     
     --fs: 1rem;
-    --fs-300: calc( var(--fs) - 1rem);  //15px
-    --fs-400: calc( var(--fs) * 1.125rem); //18px
-    --fs-500: calc( var(--fs) * 3rem); // 48px
-    --fs-600: calc( var(--fs) * 4rem); //64px 
-    --fs-700: calc( var(--fs) * 6.25); //100px
+    --fs-300: 1.5rem; ;  //15px
+    --fs-400:  1.8rem ; //18px
+    --fs-500: 4.8rem ; // 48px
+    --fs-600: 6.4rem ; //64px 
+    --fs-700: 10rem; //100px
 
 
 }

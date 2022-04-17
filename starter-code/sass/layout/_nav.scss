@@ -6,4 +6,76 @@
 .nav{
     
     padding-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list{
+        display: none;
+    }
+}
+
+.c-btn__burger{
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+     //Won't display on laptop
+     @include responsive(landscape){
+        display: none;
+    }
+    
+    
+}
+
+.c-btn__burger-icons{
+    position: relative;
+    //margin-top: 10px;
+    transition: all .2s ;
+
+    &,
+    &::before,
+    &::after{
+        height: 3px;
+        width: 20px;
+        background: white;
+        display: inline-block;
+        margin: 0 auto;
+    }
+   
+
+    &::before,
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+    
+    &::before{
+        top: -.8rem;
+    }
+
+    &::after{
+        top: .8rem;
+    }
+
+   
+
+}
+
+.c-btn__burger-icons.toggled {
+    background: transparent;
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
 }

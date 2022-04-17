@@ -1,0 +1,15 @@
+
+//We will add the breakpoint and make it responsive 
+
+$breakpoint:(
+    "tablet": 768px,
+    "landscape": 960px,
+     "laptop": 1000px,
+     );
+
+@mixin  responsive($size) {
+    @media (min-width: map-get($breakpoint, $size)){
+        @content;
+    }
+}
+
