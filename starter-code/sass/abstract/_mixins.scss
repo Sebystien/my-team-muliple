@@ -7,9 +7,23 @@ $breakpoint:(
      "laptop": 1000px,
      );
 
+     $breakpoint-up:(
+    "tablet": 768px,
+    "landscape": 959.5px,
+     "laptop": 1000px,
+     );
+
+
+
+
 @mixin  responsive($size) {
     @media (min-width: map-get($breakpoint, $size)){
         @content;
     }
 }
 
+@mixin  responsive-up($size) {
+    @media (max-width: map-get($breakpoint-up, $size)){
+        @content;
+    }
+}
