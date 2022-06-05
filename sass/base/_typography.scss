@@ -33,9 +33,25 @@ a
     
 }
 .title-xxl{
-    font-size: var(--fs-700);
+    font-size: 4rem;
+    line-height: 1;
+    text-align: center;
+
+    @include responsive(tablet){
+        
+        font-size: 6.8rem;
+        line-height: .84;
+    }
+
+    @include responsive(laptop){
+        font-size: var(--fs-700);
+        line-height: 1;
+    }
 
 }
+
+
+
 
 .title-xl{
 

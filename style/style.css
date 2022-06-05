@@ -91,7 +91,31 @@ a {
   font-weight: var(--fw-600); }
 
 .title-xxl {
-  font-size: var(--fs-700); }
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .title-xxl {
+      font-size: 6.8rem;
+      line-height: .84; } }
+  @media (min-width: 1000px) {
+    .title-xxl {
+      font-size: var(--fs-700);
+      line-height: 1; } }
+
+.header {
+  padding-bottom: 19rem; }
+
+.hero {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 8rem; }
+  @media (min-width: 1000px) {
+    .hero {
+      flex-direction: row; } }
+
+.title__hero {
+  margin-bottom: 1.8rem; }
 
 .nav__logo {
   width: 8rem; }

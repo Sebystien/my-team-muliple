@@ -1,0 +1,18 @@
+
+
+.header{
+    padding-bottom: 19rem;
+}
+.hero{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 8rem;
+    @include responsive(laptop){
+        flex-direction: row;
+    }
+
+}
+
+.title__hero{
+    margin-bottom: 1.8rem;
+}
