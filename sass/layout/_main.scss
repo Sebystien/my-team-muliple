@@ -1,0 +1,58 @@
+.main .l-container{
+    padding: 10rem 0 6.8rem;
+    position: relative;
+
+}
+
+.img-bg-main{
+    position: absolute;
+    right: -23.5%;
+}
+
+.title__section {
+    width: 60%;
+    position: relative;
+    margin-bottom: 5.6rem;
+
+    &::before{
+        //display: block;
+        content: "";
+        background: var(--clr-primary-02);
+        //background: black;
+        position: absolute;
+        left: 0;
+        top: -32%;
+        height: 5px;
+        width: 5rem;
+        
+    }
+}
+
+.title__features{
+    color: var(--clr-primary-02);
+    margin-bottom: .8rem;
+    
+}
+
+.feature-block{
+    
+    text-align: center;
+
+    & p{
+        opacity: .8;
+    }
+
+    & > *:not(:last-child) {
+        
+        margin-bottom: 4.8rem;
+    }
+
+    &__info{
+        margin-top: 1.6rem;
+    }
+}
+
+.feature-img{
+    width: 7.2rem;
+    margin: 0 auto;
+}

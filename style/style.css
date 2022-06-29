@@ -7,7 +7,7 @@
   --clr-secondary-o1: hsl(179 42% 63%);
   --clr-secondary-02: hsl(187 41% 29%);
   --clr-secondary-03:  hsl(186 100% 14%);
-  --clr-secondary-04: hsl(186 96% 10%);
+  --clr-secondary-04: hsl(186 97% 10%);
   --clr-secondary-05: hsl(186 100% 8%);
   --clr-neutral-01: hsl( 0 0% 100%);
   --clr-neutral-02: 0 0% 0%;
@@ -36,6 +36,9 @@
 /*---# background colors #---*/
 .u-clr-primary-bg {
   background: var(--clr-primary-01); }
+
+.u-clr-bg-dark {
+  background: var(--clr-secondary-04); }
 
 /*---# Text colors #---*/
 .u-text-white {
@@ -75,7 +78,7 @@ a {
 body {
   font-family: var(--ff);
   line-height: 1.5;
-  font-size: var(--fs-400); }
+  font-size: 1.5rem; }
 
 h1 {
   font-size: var(--fs-700); }
@@ -90,6 +93,9 @@ button,
 a {
   font-weight: var(--fw-600); }
 
+p {
+  line-height: 1.6; }
+
 .title-xxl {
   font-size: 4rem;
   line-height: 1;
@@ -103,8 +109,24 @@ a {
       font-size: var(--fs-700);
       line-height: 1; } }
 
+.title-xl,
+.title__section {
+  font-size: 3.2rem;
+  line-height: 1; }
+
+.title-md {
+  font-size: 1.8rem; }
+
 .header {
-  padding-bottom: 19rem; }
+  padding-bottom: 19rem;
+  position: relative; }
+
+/* SVG IMG */
+.img-bg-header {
+  position: absolute;
+  bottom: -0.7rem;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .hero {
   flex-direction: column;
@@ -217,3 +239,41 @@ a {
 .show-bg {
   visibility: visible;
   opacity: 1; }
+
+.main .l-container {
+  padding: 10rem 0 6.8rem;
+  position: relative; }
+
+.img-bg-main {
+  position: absolute;
+  right: -23.5%; }
+
+.title__section {
+  width: 60%;
+  position: relative;
+  margin-bottom: 5.6rem; }
+  .title__section::before {
+    content: "";
+    background: var(--clr-primary-02);
+    position: absolute;
+    left: 0;
+    top: -32%;
+    height: 5px;
+    width: 5rem; }
+
+.title__features {
+  color: var(--clr-primary-02);
+  margin-bottom: .8rem; }
+
+.feature-block {
+  text-align: center; }
+  .feature-block p {
+    opacity: .8; }
+  .feature-block > *:not(:last-child) {
+    margin-bottom: 4.8rem; }
+  .feature-block__info {
+    margin-top: 1.6rem; }
+
+.feature-img {
+  width: 7.2rem;
+  margin: 0 auto; }

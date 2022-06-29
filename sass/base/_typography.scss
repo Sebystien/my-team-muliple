@@ -6,7 +6,7 @@
 body{
     font-family: var(--ff);
     line-height: 1.5;
-    font-size: var(--fs-400);
+    font-size: 1.5rem;
     
 }
 
@@ -32,6 +32,12 @@ a
     font-weight: var(--fw-600);
     
 }
+
+p{
+    line-height: 1.6;
+}
+
+
 .title-xxl{
     font-size: 4rem;
     line-height: 1;
@@ -53,15 +59,16 @@ a
 
 
 
-.title-xl{
 
-}
 
-.title-l{
-
+.title-xl,
+.title__section{
+    font-size: 3.2rem;
+    line-height: 1;
 }
 
 .title-md{
+font-size: 1.8rem;
 
 }
 

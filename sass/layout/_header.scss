@@ -2,7 +2,18 @@
 
 .header{
     padding-bottom: 19rem;
+    position: relative;
 }
+
+/* SVG IMG */ 
+.img-bg-header{
+    position: absolute;
+    bottom: -0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .hero{
     flex-direction: column;
     text-align: center;
@@ -10,7 +21,7 @@
     @include responsive(laptop){
         flex-direction: row;
     }
-
+ 
 }
 
 .title__hero{
